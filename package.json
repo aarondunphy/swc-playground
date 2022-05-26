@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.2.194",
+    "chokidar": "^3.5.3"
+  },
+  "scripts": {
+    "start": "npx swc src -d dist --config-file .swcrc -w"
+  }
+}
