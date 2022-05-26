@@ -1,8 +1,15 @@
-let counter: number = 0;
+const button = document.querySelector('button')
+let counter = 0
 
 const handleButtonClick = () => {
-  counter++;
-  document.querySelector("#output").innerHTML = counter.toString();
+  counter++
+  const output = document.querySelector('#output')
+  if (!output) {
+    return
+  }
+  output.innerHTML = counter.toString()
 }
 
-document.querySelector("button").addEventListener("click", handleButtonClick)
+if (button) {
+  button.addEventListener('click', handleButtonClick)
+}
